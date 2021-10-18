@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8"
+    tools:context=".Activity.InsertNoteActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/white"
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/red">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/backbt"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_back"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Chi tiết"
+                    android:id="@+id/updatnotetitle"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/font1"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+            android:orientation="vertical"
+               android:scrollbars="none">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="wrap_content">
+
+
+        <TextView
+            android:text="Mô tả"
+            android:fontFamily="@font/font1"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/updatnotesubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edittext_custum"
+            android:fontFamily="@font/font1"
+            android:padding="15dp"
+            android:textColor="#2C2C2C"
+            android:textSize="15sp" />
+
+        <TextView
+            android:text="Nội dung"
+            android:fontFamily="@font/font1"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="15sp"
+            android:textColor="#2C2C2C"
+            android:textColorHint="#8F8F8F"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_custum"
+            android:id="@+id/updatenote"
+            android:padding="15dp"
+            android:gravity="start"
+            android:fontFamily="@font/font1"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:text="Nội dung"
+            android:fontFamily="@font/font1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/datenote"
+            android:textColor="#676767"
+            android:textSize="12dp"
+            android:gravity="right"
+            android:layout_marginBottom="100dp"
+            android:textStyle="italic"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:id="@+id/updatenotesbt"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_edit"
+        android:backgroundTint="@color/red"
+        android:layout_margin="26dp"
+        />
+
+</RelativeLayout>
